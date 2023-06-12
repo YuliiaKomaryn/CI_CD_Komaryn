@@ -1,0 +1,10 @@
+# Використовуємо офіційний образ Nginx як базовий образ
+FROM nginx
+
+# Копіюємо файли веб-застосунку у контейнер
+COPY index.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
+
+# Відкриваємо порт 80 для вхідного HTTP-трафіку
+EXPOSE 80
+
