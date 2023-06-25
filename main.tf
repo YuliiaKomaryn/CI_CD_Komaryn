@@ -5,8 +5,8 @@ provider "aws" {
   region = "eu-central-1"  # Найближчий до Києва
 }
 resource "aws_instance" "example" {
-  ami           = "ami-0c94855ba95c71c99"  # Замініть на ваш AMI ID
-  instance_type = "t2.micro"               # Замініть на ваш тип інстансу
+  ami           = "ami-0c94855ba95c71c99"  # AMI ID
+  instance_type = "t2.micro"               # тип інстансу
 
   tags = {
     Name = "ExampleInstance"
